@@ -205,7 +205,7 @@ MIT License - Detaylar için LICENSE dosyasına bakın.
 ## İletişim
 
 - GitHub Issues: Hata raporları ve özellik istekleri
-- Email: [your-email@domain.com]
+- Email: [sahinbolukbasii@gmail.com]
 
 ## Changelog
 
