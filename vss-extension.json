@@ -1,0 +1,82 @@
+{
+    "manifestVersion": 1,
+    "id": "crm-time-entry-extension",
+    "name": "CRM Time Entry Extension",
+    "version": "1.0.0",
+    "publisher": "your-publisher-name",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Azure DevOps extension for time entry integration with Microsoft Dynamics 365 CRM",
+    "categories": [
+        "Azure Boards"
+    ],
+    "tags": [
+        "work items",
+        "time tracking",
+        "crm",
+        "dynamics 365"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/your-repo/crm-time-entry-extension"
+        },
+        "support": {
+            "uri": "https://github.com/your-repo/crm-time-entry-extension/issues"
+        }
+    },
+    "branding": {
+        "color": "rgb(220, 235, 252)",
+        "theme": "light"
+    },
+    "icons": {
+        "default": "images/logo.png"
+    },
+    "files": [
+        {
+            "path": "dist",
+            "addressable": true
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "time-entry-tab",
+            "type": "ms.vss-work-web.work-item-form-page",
+            "description": "CRM Time Entry Tab",
+            "targets": [
+                "ms.vss-work-web.work-item-form"
+            ],
+            "properties": {
+                "name": "Zaman Girişi",
+                "uri": "dist/time-entry-tab.html",
+                "height": 600,
+                "inputs": [
+                    {
+                        "id": "FieldName",
+                        "description": "The field associated with the control.",
+                        "type": "WorkItemField",
+                        "properties": {
+                            "workItemFieldTypes": ["String"]
+                        },
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": false
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "contributionTypes": []
+}

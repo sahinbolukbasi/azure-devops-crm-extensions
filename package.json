@@ -1,0 +1,41 @@
+{
+  "name": "crm-time-entry-extension",
+  "version": "1.0.0",
+  "description": "Azure DevOps extension for time entry integration with Microsoft Dynamics 365 CRM",
+  "main": "dist/time-entry-tab.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch",
+    "package": "tfx extension create --manifest-globs vss-extension.json",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "azure-devops",
+    "extension",
+    "crm",
+    "dynamics-365",
+    "time-tracking"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.45.0",
+    "html-webpack-plugin": "^5.5.3",
+    "rimraf": "^5.0.1",
+    "style-loader": "^3.3.3",
+    "tfx-cli": "^0.15.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "azure-devops-extension-api": "^4.0.0",
+    "azure-devops-extension-sdk": "^4.0.0",
+    "axios": "^1.4.0"
+  }
+}
